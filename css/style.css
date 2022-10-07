@@ -1,17 +1,29 @@
 * {
   box-sizing: border-box;
 }
+
 :root {
-  --col-primary: #e6c300;
-  --col-background: #222;
+  --col-primarius: #e6c300;
+  --col-secundarius: #222;
+  --col-tertiarius: #DDD;
 }
-h1 {
-  color: var(--col-primary);
-}
+
 html {
   width: 100%;
   height: 100%;
 }
+
 body {
-  background-color: var(--col-background);
+  background-color: var(--col-secundarius);
+}
+
+header {
+  width: 100%;
+  height: 15%;
+  position: fixed;
+  background-color: var(--col-primarius);
+}
+
+header > h1 {
+  color: var(--col-secundarius);
 }
