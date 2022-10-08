@@ -28,6 +28,7 @@ header {
   justify-content: space-between;
   padding: 0px 8px;
   background-image: linear-gradient(var(--col-primarius),var(--col-primarius-fortis));
+  flex-basis: 50%;
 }
 
 header > h1 {
@@ -38,4 +39,5 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-basis: 50%;
 }
