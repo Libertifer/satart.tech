@@ -23,10 +23,17 @@ header {
   position: fixed;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0px 8px;
   background-color: var(--col-primarius);
 }
 
 header > h1 {
   color: var(--col-secundarius);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
