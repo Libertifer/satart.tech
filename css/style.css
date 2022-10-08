@@ -50,6 +50,7 @@ nav > span {
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(var(--col-primarius),var(--col-primarius-fortis),var(--col-primarius));
+  cursor: pointer;
 }
 
 nav > span:hover {
