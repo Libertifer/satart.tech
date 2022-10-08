@@ -23,6 +23,7 @@ document.getElementById('qui-sumus').innerHTML = textus['hispanus'][1];
 document.getElementById('contactare-nos').innerHTML = textus['hispanus'][2];
 document.getElementById('lingua').innerHTML = textus['hispanus'][3];
 
+var titulus = document.title;
 function motioTituli() {
   titulus = titulus.substring(1, titulus.length) + titulus.substring(0, 1);
   document.title = titulus;
