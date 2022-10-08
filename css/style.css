@@ -49,4 +49,9 @@ nav > span {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: linear-gradient(var(--col-primarius),var(--col-primarius-fortis));
+}
+
+nav > span:hover {
+  background-image: linear-gradient(var(--col-primarius-fortis),var(--col-primarius));
 }
