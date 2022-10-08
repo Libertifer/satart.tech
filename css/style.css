@@ -3,8 +3,10 @@
 }
 
 :root {
+  --col-primarius-fortis: #ffd700;
   --col-primarius: #e6c300;
   --col-secundarius: #222;
+  --col-secundarius-fortis: #111;
   --col-tertiarius: #DDD;
 }
 
@@ -14,7 +16,7 @@ html {
 }
 
 body {
-  background-color: var(--col-secundarius);
+  background-image: linear-gradient(var(--col-secundarius),var(--col-secundarius-fortis));
 }
 
 header {
@@ -25,7 +27,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0px 8px;
-  background-color: var(--col-primarius);
+  background-color: linear-gradient(var(--col-primarius),var(--col-primarius-fortis));
 }
 
 header > h1 {
