@@ -27,7 +27,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0px 8px;
-  background-color: linear-gradient(var(--col-primarius),var(--col-primarius-fortis));
+  background-image: linear-gradient(var(--col-primarius),var(--col-primarius-fortis));
 }
 
 header > h1 {
