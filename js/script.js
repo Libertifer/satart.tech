@@ -1,21 +1,21 @@
 var textus = {
   'hispanus': [
-    'Inicio',
-    'Quiénes Somos',
-    'Contacto',
-    'Idioma',
+    'INICIO',
+    'QUIÉNES SOMOS',
+    'CONTACTO',
+    'IDIOMA',
   ],
   'anglicus': [
-    'Home',
-    'About us',
-    'Contact',
-    'Language'
+    'HOME',
+    'ABOUT US',
+    'CONTACT',
+    'LANGUAGE'
   ]
 };
 
 var linguae = [
-  'Español',
-  'English'
+  'ESPAÑOL',
+  'ENGLISH'
 ]
 
 document.getElementById('initius').innerHTML = textus['hispanus'][0];
