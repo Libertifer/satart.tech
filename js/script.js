@@ -51,7 +51,7 @@ document.getElementById('contactare-nos').innerHTML = textus[linguaElecta][0][2]
 document.getElementById('lingua').innerHTML = textus[linguaElecta][0][3];
 
 i = 0;
-for ludus in ludi {
+for (let ludus in ludi) {
   document.getElementById('principalis').innerHTML += `<fieldset><legend>${ludus}</legend><p>${textus[linguaElecta][1][i]}</p></fieldset>`;
   i++;
 }
