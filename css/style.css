@@ -58,6 +58,10 @@ nav > span:hover {
   background-image: linear-gradient(to bottom,var(--col-primarius-levior) 0%,var(--col-primarius-levis) 48%,var(--col-primarius) 53%,var(--col-primarius-fortis) 100%);
 }
 
+fieldset {
+  border: solid 2px var(--col-tertiarius);
+}
+
 fieldset[id^="ludus-"] > p, legend {
   color: var(--col-tertiarius);
 }
