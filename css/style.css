@@ -65,3 +65,11 @@ fieldset {
 fieldset[id^="ludus-"] > p, legend {
   color: var(--col-tertiarius);
 }
+
+main {
+  margin: 32px;
+  padding: 32px;
+  border: solid 1px #0000;
+  background-image: linear-gradient(0deg, var(--col-secundarius-fortis), var(--col-secundarius));
+  border-radius: 8px;
+}
