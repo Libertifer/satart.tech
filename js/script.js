@@ -51,7 +51,7 @@ document.getElementById('contactare-nos').innerHTML = textus[linguaElecta][0][2]
 document.getElementById('lingua').innerHTML = textus[linguaElecta][0][3];
 
 for (let ludus in ludi) {
-  document.getElementById('principalis').innerHTML += `<fieldset><legend>${ludi[ludus]}</legend><p>${textus[linguaElecta][1][ludus]}</p></fieldset>`;
+  document.getElementById('principalis').innerHTML += `<fieldset id="ludus-${ludus}"><legend>${ludi[ludus]}</legend><p>${textus[linguaElecta][1][ludus]}</p></fieldset>`;
 }
 
 var titulus = document.title;
