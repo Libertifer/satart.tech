@@ -49,6 +49,7 @@ document.getElementById('initius').innerHTML = textus[linguaElecta][0][0];
 document.getElementById('qui-sumus').innerHTML = textus[linguaElecta][0][1];
 document.getElementById('contactare-nos').innerHTML = textus[linguaElecta][0][2];
 document.getElementById('lingua').innerHTML = textus[linguaElecta][0][3];
+document.getElementById('ludi').innerHTML = textus[linguaElecta][0][4];
 
 for (let ludus in ludi) {
   document.getElementById('principalis').innerHTML += `<fieldset id="ludus-${ludus}"><legend>${ludi[ludus]}</legend><p>${textus[linguaElecta][1][ludus]}</p></fieldset>`;
