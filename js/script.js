@@ -52,7 +52,7 @@ document.getElementById('lingua').innerHTML = textus[linguaElecta][0][3];
 
 i = 0;
 for (let ludus in ludi) {
-  document.getElementById('principalis').innerHTML += `<fieldset><legend>${ludus}</legend><p>${textus[linguaElecta][1][i]}</p></fieldset>`;
+  document.getElementById('principalis').innerHTML += `<fieldset><legend>${ludi[ludus]}</legend><p>${textus[linguaElecta][1][ludus]}</p></fieldset>`;
   i++;
 }
 
