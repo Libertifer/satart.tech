@@ -50,10 +50,8 @@ document.getElementById('qui-sumus').innerHTML = textus[linguaElecta][0][1];
 document.getElementById('contactare-nos').innerHTML = textus[linguaElecta][0][2];
 document.getElementById('lingua').innerHTML = textus[linguaElecta][0][3];
 
-i = 0;
 for (let ludus in ludi) {
   document.getElementById('principalis').innerHTML += `<fieldset><legend>${ludi[ludus]}</legend><p>${textus[linguaElecta][1][ludus]}</p></fieldset>`;
-  i++;
 }
 
 var titulus = document.title;
