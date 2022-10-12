@@ -61,9 +61,9 @@ nav > span:hover {
 }
 
 fieldset {
-  margin: 16px 32px;
+  margin: 16px 32px!important;
   border: solid 2px var(--col-tertiarius);
-  padding: 16px;
+  padding: 16px!important;
 }
 
 fieldset[id^="ludus-"] > p, legend {
