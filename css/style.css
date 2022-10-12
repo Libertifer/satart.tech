@@ -100,3 +100,11 @@ main {
 .descriptio > div {
   padding-left: 16px; 
 }
+
+input[type="button"], button {
+  background-image: linear-gradient(to bottom,var(--col-primarius-fortis) 0%,var(--col-primarius) 48%,var(--col-primarius-levis) 53%,var(--col-primarius-levior) 100%);
+}
+
+input[type="button"]:hover, button:hover {
+  background-image: linear-gradient(to bottom,var(--col-primarius-levior) 0%,var(--col-primarius-levis) 48%,var(--col-primarius) 53%,var(--col-primarius-fortis) 100%);
+}
