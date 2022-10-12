@@ -102,6 +102,7 @@ main {
 }
 
 input[type="button"], button {
+  color: var(--col-secundarius);
   background-image: linear-gradient(to bottom,var(--col-primarius-fortis) 0%,var(--col-primarius) 48%,var(--col-primarius-levis) 53%,var(--col-primarius-levior) 100%);
 }
 
