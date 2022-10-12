@@ -86,3 +86,7 @@ main {
 #ludi > h2 {
   color: var(--col-tertiarius);
 }
+
+.descriptio {
+  display:flex; 
+}
