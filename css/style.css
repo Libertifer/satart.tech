@@ -104,6 +104,8 @@ main {
 input[type="button"], button {
   color: var(--col-secundarius);
   background-image: linear-gradient(to bottom,var(--col-primarius-fortis) 0%,var(--col-primarius) 48%,var(--col-primarius-levis) 53%,var(--col-primarius-levior) 100%);
+  padding: 4px 8px;
+  cursor: pointer;
 }
 
 input[type="button"]:hover, button:hover {
