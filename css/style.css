@@ -98,7 +98,10 @@ main {
 }
 
 .descriptio > div {
-  padding-left: 16px; 
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 input[type="button"], button {
@@ -106,6 +109,7 @@ input[type="button"], button {
   background-image: linear-gradient(to bottom,var(--col-primarius-fortis) 0%,var(--col-primarius) 48%,var(--col-primarius-levis) 53%,var(--col-primarius-levior) 100%);
   padding: 4px 8px;
   cursor: pointer;
+  width: 20%;
 }
 
 input[type="button"]:hover, button:hover {
