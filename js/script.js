@@ -52,7 +52,7 @@ document.getElementById('lingua').innerHTML = textus[linguaElecta][0][3];
 document.getElementById('ludi').innerHTML = `<h2 class="text-2xl font-bold">${textus[linguaElecta][0][4]}</h2>`;
 
 for (let ludus in ludi) {
-  document.getElementById('principalis').innerHTML += `<fieldset id="ludus-${ludus}"><legend>${ludi[ludus][0]}</legend><div class="descriptio"><img src="img/${ludi[ludus][1]}"/><div><p>${textus[linguaElecta][1][ludus]}</p><input type="button" onclick="location.href='https://libertifer.itch.io/nokia-tower-offense'"></div></div></fieldset>`;
+  document.getElementById('principalis').innerHTML += `<fieldset id="ludus-${ludus}"><legend>${ludi[ludus][0]}</legend><div class="descriptio"><img src="img/${ludi[ludus][1]}"/><div><p>${textus[linguaElecta][1][ludus]}</p><input type="button" value="Más información" onclick="location.href=${ludi[ludus][2]}"></div></div></fieldset>`;
 }
 
 var titulus = document.title;
