@@ -40,7 +40,7 @@ var comites = [
 ]
 
 var ludi = [
-  ['Nokia Tower Offense','img/NokiaTO.png']
+  ['Nokia Tower Offense','NokiaTO.png']
 ]
 
 var linguaElecta = 'hispana';
