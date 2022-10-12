@@ -40,7 +40,7 @@ var comites = [
 ]
 
 var ludi = [
-  'Nokia Tower Offense'  
+  ['Nokia Tower Offense','img/NokiaTO.png']
 ]
 
 var linguaElecta = 'hispana';
@@ -52,7 +52,7 @@ document.getElementById('lingua').innerHTML = textus[linguaElecta][0][3];
 document.getElementById('ludi').innerHTML = `<h2 class="text-2xl font-bold">${textus[linguaElecta][0][4]}</h2>`;
 
 for (let ludus in ludi) {
-  document.getElementById('principalis').innerHTML += `<fieldset id="ludus-${ludus}"><legend>${ludi[ludus]}</legend><p>${textus[linguaElecta][1][ludus]}</p></fieldset>`;
+  document.getElementById('principalis').innerHTML += `<fieldset id="ludus-${ludus}"><legend>${ludi[ludus][0]}</legend><div class="descriptio"><img src="img/${ludi[ludus][1]}"/><p>${textus[linguaElecta][1][ludus]}</p></div></fieldset>`;
 }
 
 var titulus = document.title;
