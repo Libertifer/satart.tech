@@ -66,7 +66,7 @@ fieldset {
   padding: 16px!important;
 }
 
-fieldset[id^="ludus-"] > .descriptio > p, legend {
+.descriptio > p, legend {
   color: var(--col-tertiarius);
 }
 
@@ -90,4 +90,9 @@ main {
 .descriptio {
   display: flex;
   justify-content: center;
+}
+
+.descirptio > img {
+  width: 300px;
+  height: 200px;
 }
