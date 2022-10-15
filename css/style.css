@@ -20,7 +20,18 @@ html {
 }
 
 body {
-  background-color: black;
+  background: conic-gradient(
+		from 45deg,
+		#151515 0,
+		#151515 90deg,
+		#111 90deg,
+		#111 180deg,
+		#1a1a1a 180deg,
+		#1a1a1a 270deg,
+		#222 270deg,
+		#222 360deg
+	);
+	background-size: 1em 1em;
 }
 
 header {
