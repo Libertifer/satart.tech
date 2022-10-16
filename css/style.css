@@ -66,16 +66,8 @@ nav > span {
   background-image: linear-gradient(to bottom,var(--col-primarius-fortis) 0%,var(--col-primarius) 48%,var(--col-primarius-levis) 53%,var(--col-primarius-levior) 100%);
   color: var(--col-secundarius);
   cursor: pointer;
-	border-left: solid 1px var(--col-primarius-levior);
+	border-left: solid 1px var(--col-primarius-fortis);
 	border-right: solid 1px var(--col-primarius-levior);
-}
-
-nav > span:first-child {
-	border-left: solid 2px var(--col-primarius-levior);
-}
-
-nav > span:last-child {
-	border-right: solid 2px var(--col-primarius-levior);
 }
 
 nav > span:hover {
