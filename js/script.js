@@ -1,3 +1,5 @@
+import Data from 'json/data.json';
+
 var textus = {
   'hispana': [
     [
