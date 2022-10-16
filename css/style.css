@@ -55,6 +55,8 @@ nav {
   justify-content: space-around;
   flex-basis: 45%;
   height: 100%;
+	border-left: solid 1px var(--col-primarius-levior);
+	border-right: solid 1px var(--col-primarius-fortis);
 }
 
 nav > span {
