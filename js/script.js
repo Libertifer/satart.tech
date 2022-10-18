@@ -1,5 +1,3 @@
-import textus from 'json/db.json';
-
 var textus = {
   'hispana': [
     [
