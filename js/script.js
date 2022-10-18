@@ -63,3 +63,9 @@ function motioTituli() {
   document.title = titulus;
   setTimeout("motioTituli()", 500);
 }
+
+fetch("./json/db.json")
+.then(responsum => {
+   return responsum.json();
+})
+.then(data => console.log(data));
