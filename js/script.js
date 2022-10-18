@@ -45,7 +45,7 @@ var ludi = [
 
 var linguaElecta = 'hispana';
 
-document.getElementById('initius').innerHTML = textus[linguaElecta][0][0];
+//document.getElementById('initius').innerHTML = textus[linguaElecta][0][0];
 document.getElementById('qui-sumus').innerHTML = textus[linguaElecta][0][1];
 document.getElementById('contactare-nos').innerHTML = textus[linguaElecta][0][2];
 document.getElementById('lingua').innerHTML = textus[linguaElecta][0][3];
@@ -66,4 +66,4 @@ fetch("./json/db.json")
 .then(responsum => {
    return responsum.json();
 })
-.then(data => console.log(data));
+.then(data => document.getElementById('initius').innerHTML = data['textus'][linguaElecta]['index']['initius']);
