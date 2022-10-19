@@ -5,6 +5,7 @@ async function textusLegere(archivum) {
   let petitum = await fetch(archivum);
   let catenaDatorum = await petitum.text();
   let data = JSON.parse(catenaDatorum);
+  console.log(data);
   return data;
 }
 
@@ -21,6 +22,7 @@ function paginaScribere(obiectum) {
 }
 
 var obiectum = textusLegere("./json/db.json");
+console.log(obiectum);
 indexScribere(obiectum);
 paginaScribere(obiectum);
 
