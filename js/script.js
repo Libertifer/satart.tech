@@ -9,7 +9,7 @@ async function textusLegere(archivum) {
   return data;
 }
 
-function indexScribere(obiectum) {
+async function indexScribere(obiectum) {
   console.log(obiectum);
   document.getElementById('initius').innerHTML = obiectum['textus'][linguaElecta]['index']['initius'];
   document.getElementById('qui-sumus').innerHTML = obiectum['textus'][linguaElecta]['index']['qui-sumus'];
@@ -17,11 +17,11 @@ function indexScribere(obiectum) {
   document.getElementById('lingua').innerHTML = obiectum['textus'][linguaElecta]['index']['lingua'];
 }
 
-function paginaScribere(obiectum) {
+async function paginaScribere(obiectum) {
   document.getElementById('ludi').innerHTML = obiectum['textus'][linguaElecta]['sectiones']['ludi'];
 }
 
-var obiectum = textusLegere("./json/db.json");
+var obiectum = await textusLegere("./json/db.json");
 console.log(obiectum);
 indexScribere(obiectum);
 paginaScribere(obiectum);
