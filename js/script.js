@@ -2,8 +2,8 @@
 var linguaElecta = 'hispana';
 
 function textusLegere(archivum) {
-  let petitum = await fetch(archivum);
-  let catenaDatorum = await petitum.text();
+  let petitum = fetch(archivum);
+  let catenaDatorum = petitum.text();
   let data = JSON.parse(catenaDatorum);
   console.log(data);
   return data;
