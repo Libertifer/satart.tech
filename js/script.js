@@ -36,7 +36,7 @@ promissum.then(
   function(){alert('Promissum non prosperum fuit')}
 );
 
-obiectum = await textusLegere("./json/db.json");
+//obiectum = await textusLegere("./json/db.json");
 console.log(obiectum);
 
 for (let ludus in obiectum['ludi']) {
