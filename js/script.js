@@ -80,6 +80,6 @@ textusLegere("./json/db.json");
 .then(data => document.getElementById('initius').innerHTML = data['textus'][linguaElecta]['index']['initius'])
 .then(data => document.getElementById('qui-sumus').innerHTML = data['textus'][linguaElecta]['index']['qui-sumus'])
 .then(data => document.getElementById('communica-nos').innerHTML = data['textus'][linguaElecta]['index']['communica-nos'])
-.then(data => document.getElementById('lingua').innerHTML = data['textus'][linguaElecta]['index']['lingua'])
+.then(data => document.getElementById('lingua').innerHTML = data['textus'][linguaElecta]['index']['lingua']) 
 .then(data => document.getElementById('ludi').innerHTML = data['textus'][linguaElecta]['index']['ludi']);
 */
