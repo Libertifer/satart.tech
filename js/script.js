@@ -65,11 +65,11 @@ function motioTituli() {
 async function textusLegere(archivum) {
   let petitum = await fetch(archivum);
   let data = await petitum.text();
-  document.getElementById('initius').innerHTML = data['textus'][linguaElecta]['index']['initius'];
-  document.getElementById('qui-sumus').innerHTML = data['textus'][linguaElecta]['index']['qui-sumus'];
-  document.getElementById('communica-nos').innerHTML = data['textus'][linguaElecta]['index']['communica-nos'];
-  document.getElementById('lingua').innerHTML = data['textus'][linguaElecta]['index']['lingua'];
-  document.getElementById('ludi').innerHTML = data['textus'][linguaElecta]['index']['ludi'];
+  document.getElementById('initius').innerHTML = data['textus']['hispana']['index']['initius'];
+  document.getElementById('qui-sumus').innerHTML = data['textus']['hispana']['index']['qui-sumus'];
+  document.getElementById('communica-nos').innerHTML = data['textus']['hispana']['index']['communica-nos'];
+  document.getElementById('lingua').innerHTML = data['textus']['hispana']['index']['lingua'];
+  document.getElementById('ludi').innerHTML = data['textus']['hispana']['index']['ludi'];
 }
 
 textusLegere("./json/db.json");
