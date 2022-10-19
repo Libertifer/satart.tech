@@ -24,7 +24,7 @@ function paginaScribere(obiectum) {
 let obiectum;
 
 let promissum = new Promise(function(successus,error) {
-  obiectum = textusLegere();
+  obiectum = textusLegere('./json/db.json');
   if (obiectum) {
     successus(); 
   }else{
