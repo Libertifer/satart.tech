@@ -9,6 +9,7 @@ async function textusLegere(archivum) {
 }
 
 function indexScribere(obiectum) {
+  console.log(typeof obiectum);
   document.getElementById('initius').innerHTML = obiectum['textus'][linguaElecta]['index']['initius'];
   document.getElementById('qui-sumus').innerHTML = obiectum['textus'][linguaElecta]['index']['qui-sumus'];
   document.getElementById('communica-nos').innerHTML = obiectum['textus'][linguaElecta]['index']['communica-nos'];
