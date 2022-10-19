@@ -97,6 +97,7 @@ main {
   background-image: linear-gradient(to bottom,var(--col-secundarius) 0%,var(--col-secundarius-subfortis) 48%,var(--col-secundarius-iuxta-fortis) 53%,var(--col-secundarius-fortis) 100%);
   border-radius: 8px 8px 0px 0px;
   padding: 8px;
+	color: var(--col-tertiarius);
 }
 
 #ludi > h2 {
