@@ -66,7 +66,7 @@ async function textusLegere(archivum) {
   let petitum = await fetch(archivum);
   let data = await petitum.text();
   console.log(data);
-  document.getElementById('initius').innerHTML = data['textus']['hispana']['index']['initius'];
+  document.getElementById('initius').innerHTML = data['textus'].hispana['index']['initius'];
   document.getElementById('qui-sumus').innerHTML = data['textus']['hispana']['index']['qui-sumus'];
   document.getElementById('communica-nos').innerHTML = data['textus']['hispana']['index']['communica-nos'];
   document.getElementById('lingua').innerHTML = data['textus']['hispana']['index']['lingua'];
