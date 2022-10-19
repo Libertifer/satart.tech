@@ -68,11 +68,11 @@ async function textusLegere(archivum) {
   let data = JSON.parse(catenaDatorum);
   console.log(data['textus']);
   console.log(data);
-  document.getElementById('initius').innerHTML = data['textus']['hispana']['index']['initius'];
-  document.getElementById('qui-sumus').innerHTML = data['textus']['hispana']['index']['qui-sumus'];
-  document.getElementById('communica-nos').innerHTML = data['textus']['hispana']['index']['communica-nos'];
-  document.getElementById('lingua').innerHTML = data['textus']['hispana']['index']['lingua'];
-  document.getElementById('ludi').innerHTML = data['textus']['hispana']['index']['ludi'];
+  document.getElementById('initius').innerHTML = data['textus'][linguaElecta]['index']['initius'];
+  document.getElementById('qui-sumus').innerHTML = data['textus'][linguaElecta]['index']['qui-sumus'];
+  document.getElementById('communica-nos').innerHTML = data['textus'][linguaElecta]['index']['communica-nos'];
+  document.getElementById('lingua').innerHTML = data['textus'][linguaElecta]['index']['lingua'];
+  document.getElementById('ludi').innerHTML = data['textus'][linguaElecta]['sectiones']['ludi'];
 }
 
 textusLegere("./json/db.json");
