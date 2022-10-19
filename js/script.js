@@ -62,7 +62,18 @@ function motioTituli() {
   setTimeout("motioTituli()", 500);
 }
 
-fetch("./json/db.json")
+async function textusLegere(archivum) {
+  let x = await fetch(archivum);
+  let y = await x.text();
+  document.getElementById('initius').innerHTML = data['textus'][linguaElecta]['index']['initius']);
+  document.getElementById('qui-sumus').innerHTML = data['textus'][linguaElecta]['index']['qui-sumus']);
+  document.getElementById('communica-nos').innerHTML = data['textus'][linguaElecta]['index']['communica-nos']);
+  document.getElementById('lingua').innerHTML = data['textus'][linguaElecta]['index']['lingua']);
+  document.getElementById('ludi').innerHTML = data['textus'][linguaElecta]['index']['ludi']);
+}
+
+textusLegere("./json/db.json");
+/*fetch("./json/db.json")
 .then(responsum => {
    return responsum.json();
 })
@@ -71,3 +82,4 @@ fetch("./json/db.json")
 .then(data => document.getElementById('communica-nos').innerHTML = data['textus'][linguaElecta]['index']['communica-nos'])
 .then(data => document.getElementById('lingua').innerHTML = data['textus'][linguaElecta]['index']['lingua'])
 .then(data => document.getElementById('ludi').innerHTML = data['textus'][linguaElecta]['index']['ludi']);
+*/
