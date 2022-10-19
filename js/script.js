@@ -65,7 +65,7 @@ function motioTituli() {
 async function textusLegere(archivum) {
   let data = await fetch(archivum);
   console.log(data['textus']);
-  console.log(typeof data['textus']);
+  console.log(typeof data);
   document.getElementById('initius').innerHTML = data['textus']['hispana']['index']['initius'];
   document.getElementById('qui-sumus').innerHTML = data['textus']['hispana']['index']['qui-sumus'];
   document.getElementById('communica-nos').innerHTML = data['textus']['hispana']['index']['communica-nos'];
