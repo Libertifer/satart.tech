@@ -1,7 +1,7 @@
 
 var linguaElecta = 'hispana';
 
-async function textusLegere(archivum) {
+function textusLegere(archivum) {
   let petitum = await fetch(archivum);
   let catenaDatorum = await petitum.text();
   let data = JSON.parse(catenaDatorum);
@@ -9,7 +9,7 @@ async function textusLegere(archivum) {
   return data;
 }
 
-async function indexScribere(obiectum) {
+function indexScribere(obiectum) {
   console.log(obiectum);
   document.getElementById('initius').innerHTML = obiectum['textus'][linguaElecta]['index']['initius'];
   document.getElementById('qui-sumus').innerHTML = obiectum['textus'][linguaElecta]['index']['qui-sumus'];
@@ -17,14 +17,27 @@ async function indexScribere(obiectum) {
   document.getElementById('lingua').innerHTML = obiectum['textus'][linguaElecta]['index']['lingua'];
 }
 
-async function paginaScribere(obiectum) {
+function paginaScribere(obiectum) {
   document.getElementById('ludi').innerHTML = obiectum['textus'][linguaElecta]['sectiones']['ludi'];
 }
 
+let obiectum;
+
+let promissum = new Promise(function(successus,error) {
+  obiectum = textusLegere();
+  if (obiectum) {
+    successus(); 
+  }else{
+    error(); 
+  }
+});
+promissum.then(
+  function(){indexScribere(obiectum);paginaScribere(obiectum);},
+  function(){alert('Promissum non prosperum fuit')}
+);
+
 let obiectum = await textusLegere("./json/db.json");
 console.log(obiectum);
-indexScribere(obiectum);
-paginaScribere(obiectum);
 
 for (let ludus in obiectum['ludi']) {
   document.getElementById('principalis').innerHTML += `<fieldset id="ludus-${ludus}"><legend>${obiectum['ludi'][ludus]['nomen']}</legend><div class="descriptio"><img src="img/${obiectum['ludi'][ludus]['imago']}"/><div><p>${obiectum['ludi'][ludus]['descriptio'][linguaElecta]}</p><input type="button" value="Más información" onclick="window.open('${obiectum['ludi'][ludus]['vinculum']}')"></div></div></fieldset>`;
