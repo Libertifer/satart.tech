@@ -21,7 +21,7 @@ async function paginaScribere(obiectum) {
   document.getElementById('ludi').innerHTML = obiectum['textus'][linguaElecta]['sectiones']['ludi'];
 }
 
-var obiectum = await textusLegere("./json/db.json");
+let obiectum = await textusLegere("./json/db.json");
 console.log(obiectum);
 indexScribere(obiectum);
 paginaScribere(obiectum);
