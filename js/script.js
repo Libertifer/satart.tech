@@ -45,11 +45,11 @@ var ludi = [
 
 var linguaElecta = 'hispana';
 
-//document.getElementById('initius').innerHTML = textus[linguaElecta][0][0];
+/*document.getElementById('initius').innerHTML = textus[linguaElecta][0][0];
 document.getElementById('qui-sumus').innerHTML = textus[linguaElecta][0][1];
 document.getElementById('contactare-nos').innerHTML = textus[linguaElecta][0][2];
 document.getElementById('lingua').innerHTML = textus[linguaElecta][0][3];
-document.getElementById('ludi').innerHTML = `<h2 class="text-2xl font-bold">${textus[linguaElecta][0][4]}</h2>`;
+document.getElementById('ludi').innerHTML = `<h2 class="text-2xl font-bold">${textus[linguaElecta][0][4]}</h2>`;*/
 
 for (let ludus in ludi) {
   document.getElementById('principalis').innerHTML += `<fieldset id="ludus-${ludus}"><legend>${ludi[ludus][0]}</legend><div class="descriptio"><img src="img/${ludi[ludus][1]}"/><div><p>${textus[linguaElecta][1][ludus]}</p><input type="button" value="Más información" onclick="window.open('${ludi[ludus][2]}')"></div></div></fieldset>`;
