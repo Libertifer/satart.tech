@@ -36,10 +36,23 @@
         "comites": "Membri"
       }
     },
+    "lusitana": {
+      "index": {
+        "initius": "INICIO",
+        "qui-sumus": "QUEM SOMOS",
+        "communica-nos": "CONTATO",
+        "lingua": "LÍNGUA"
+      },
+      "sectiones": {
+        "ludi": "Jogos",
+        "comites": "Membros"
+      }
+    },
     "linguae": {
       "hispana": "ESPAÑOL",
       "anglica": "ENGLISH (US)",
-      "italica": "ITALIANO"
+      "italica": "ITALIANO",
+      "lusitana": "PORTUGUÊS"
     }
   },
   "ludi": [
@@ -50,7 +63,8 @@
       "descriptio": {
         "hispana": "¿Alguna vez has jugado a juegos Tower Defense? En plan ¿que debes construir torres para detener a un ejército maligno que quiere destruir tu base? Pues, ahora tú vas a construir las torres para ayudar al ejército maligno (o bueno, ya que están de tu lado) a destruir la base.",
         "anglica": "Have you ever played Tower Defense games? Like you gotta build towers to stop some evil army from destroying your base? Well, now you will build the towers to help the evil (or good, since they're on your side) army to destroy the base.",
-        "italica": "Hai mai giocato gioci Tower Defense? Tipo che devi costruire torri per fermare un essercito cattivo che vuo struggere la tua base? Bene, ora tu costruirai le torri per aiutare l'essercito cattivo (o buono, poiché sonno dalla tua parte) a struggere la base."
+        "italica": "Hai mai giocato gioci Tower Defense? Tipo che devi costruire torri per fermare un essercito cattivo che vuo struggere la tua base? Bene, ora tu costruirai le torri per aiutare l'essercito cattivo (o buono, poiché sonno dalla tua parte) a struggere la base.",
+        "lusitana": "Alguma vez jogaste jogos Tower Defense? Em plan, deve construir torres para deter un exército malo que quere destruir sua base? Bem, agora você construirá as torres para ajudar o exército malo (o bom, já que estão do seu lado) a destruir a base."
       }
     }
   ],
@@ -60,7 +74,8 @@
       "descriptio": {
         "hispana": "Desarrollador web en stack LAMP, con manejo de frameworks como Bootstrap, Tailwind, React y Vue.js.",
         "anglica": "LAMP web developer, skilled on frameworks like Bootstrap, Tailwind, React and Vue.js.",
-        "italica": "Sviluppatore web in stack LAMP, con gestione di frameworks come Bootstrap, Tailwind, React e Vue.js."
+        "italica": "Sviluppatore web in stack LAMP, con gestione di frameworks come Bootstrap, Tailwind, React e Vue.js.",
+        "lusitana": "Desenvolvedor web no stack LAMP, com manuseio de frameworks com Bootstrap, Tailwind, React e Vue.js."
       }
     },
     {
@@ -68,7 +83,8 @@
       "descriptio": {
         "hispana": "Diseñador gráfico de sprites y backgrounds en Paint Tool SAI y Aseprite.",
         "anglica": "Graphic designer of sprites and backgrounds with Paint Tool SAI and Aseprite.",
-        "italica": "Grafico di sprites e backgrounds in Paint Tool SAI ed Aseprite."
+        "italica": "Grafico di sprites e backgrounds in Paint Tool SAI ed Aseprite.",
+        "lusitana": "Designer gráfico de sprites e backgrounds no Paint Tool SAI e Aseprite."
       }
     }
   ]
