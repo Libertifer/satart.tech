@@ -5,7 +5,8 @@ async function textusLegere(archivum) {
   let catenaDatorum = await petitum.text();
   let data = await JSON.parse(catenaDatorum);
   console.log(data);
-  return data;
+  indexScribere(data);
+  paginaScribere(data);
 }
 
 function indexScribere(obiectum) {
@@ -18,16 +19,12 @@ function indexScribere(obiectum) {
 
 function paginaScribere(obiectum) {
   document.getElementById('ludi').innerHTML = obiectum['textus'][linguaElecta]['sectiones']['ludi'];
+  for (let ludus in obiectum['ludi']) {
+    document.getElementById('principalis').innerHTML += `<fieldset id="ludus-${ludus}"><legend>${obiectum['ludi'][ludus]['nomen']}</legend><div class="descriptio"><img src="img/${obiectum['ludi'][ludus]['imago']}"/><div><p>${obiectum['ludi'][ludus]['descriptio'][linguaElecta]}</p><input type="button" value="Más información" onclick="window.open('${obiectum['ludi'][ludus]['vinculum']}')"></div></div></fieldset>`;
+  }
 }
 
-let obiectum;
-
-obiectum = textusLegere("./json/db.json");
-console.log(obiectum);
-
-for (let ludus in obiectum['ludi']) {
-  document.getElementById('principalis').innerHTML += `<fieldset id="ludus-${ludus}"><legend>${obiectum['ludi'][ludus]['nomen']}</legend><div class="descriptio"><img src="img/${obiectum['ludi'][ludus]['imago']}"/><div><p>${obiectum['ludi'][ludus]['descriptio'][linguaElecta]}</p><input type="button" value="Más información" onclick="window.open('${obiectum['ludi'][ludus]['vinculum']}')"></div></div></fieldset>`;
-}
+textusLegere("./json/db.json");
 
 var titulus = document.title;
 function motioTituli() {
