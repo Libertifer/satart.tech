@@ -4,13 +4,11 @@ async function textusLegere(archivum) {
   let petitum = await fetch(archivum);
   let catenaDatorum = await petitum.text();
   let data = await JSON.parse(catenaDatorum);
-  console.log(data);
   indexScribere(data);
   paginaScribere(data);
 }
 
 function indexScribere(obiectum) {
-  console.log(obiectum);
   document.getElementById('initius').innerHTML = obiectum['textus'][linguaElecta]['index']['initius'];
   document.getElementById('qui-sumus').innerHTML = obiectum['textus'][linguaElecta]['index']['qui-sumus'];
   document.getElementById('communica-nos').innerHTML = obiectum['textus'][linguaElecta]['index']['communica-nos'];
@@ -18,8 +16,9 @@ function indexScribere(obiectum) {
   linguaeIndicare(obiectum);
 }
 
-function linguaeIndicare() {
-   for (let lingua in obiectum['textus']['linguae']) {
+function linguaeIndicare(obiectum) {
+  console.log(obiectum);
+  for (let lingua in obiectum['textus']['linguae']) {
     document.getElementById('linguae').innerHTML += `<li onclick="linguaElecta = '${lingua}'">${obiectum['textus']['linguae'][lingua]}</li>`;
   }
 }
