@@ -73,7 +73,7 @@ nav > span, nav > div {
 	border-right: solid 1px var(--col-primarius-levior);
 }
 
-nav > span:hover {
+nav > span:hover, nav > div:hover {
   background-image: linear-gradient(to bottom,var(--col-primarius-levior) 0%,var(--col-primarius-levis) 48%,var(--col-primarius) 53%,var(--col-primarius-fortis) 100%);
 }
 
