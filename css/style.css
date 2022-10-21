@@ -59,7 +59,7 @@ nav {
 	border-right: solid 1px var(--col-primarius-fortis);
 }
 
-nav > span {
+nav > span, nav > div {
   width: 100%;
   height: 100%;
   display: flex;
