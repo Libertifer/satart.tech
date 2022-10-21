@@ -15,6 +15,13 @@ function indexScribere(obiectum) {
   document.getElementById('qui-sumus').innerHTML = obiectum['textus'][linguaElecta]['index']['qui-sumus'];
   document.getElementById('communica-nos').innerHTML = obiectum['textus'][linguaElecta]['index']['communica-nos'];
   document.getElementById('lingua').innerHTML = obiectum['textus'][linguaElecta]['index']['lingua'];
+  linguaeIndicare(obiectum);
+}
+
+function linguaeIndicare() {
+   for (let lingua in obiectum['textus']['linguae']) {
+    document.getElementById('linguae').innerHTML += `<li onclick="linguaElecta = '${lingua}'">${obiectum['textus']['linguae'][lingua]}</li>`;
+  }
 }
 
 function paginaScribere(obiectum) {
