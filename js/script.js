@@ -22,7 +22,7 @@ function linguaeIndicare(obiectum) {
   for (let lingua in obiectum['textus']['linguae']) {
     document.getElementById('index-linguarum').innerHTML += `<li onclick="linguaElecta = '${lingua}'">${obiectum['textus']['linguae'][lingua]}</li>`;
   }
-  document.getElementById('index-linguarum').innerHTML = "</ul></div>";
+  document.getElementById('index-linguarum').innerHTML += "</ul></div>";
 }
 
 function paginaScribere(obiectum) {
