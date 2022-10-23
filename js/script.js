@@ -13,7 +13,7 @@ function indexScribere(obiectum) {
   document.getElementById('qui-sumus').innerHTML = obiectum['textus'][linguaElecta]['index']['qui-sumus'];
   document.getElementById('communica-nos').innerHTML = obiectum['textus'][linguaElecta]['index']['communica-nos'];
   document.getElementById('lingua').innerHTML = obiectum['textus'][linguaElecta]['index']['lingua'];
-  //linguaeIndicare(obiectum);
+  linguaeIndicare(obiectum);
 }
 
 function linguaeIndicare(obiectum) {
