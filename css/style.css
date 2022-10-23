@@ -133,3 +133,17 @@ input[type="button"], button {
 input[type="button"]:hover, button:hover {
   background-image: linear-gradient(to bottom,var(--col-primarius-levior) 0%,var(--col-primarius-levis) 48%,var(--col-primarius) 53%,var(--col-primarius-fortis) 100%);
 }
+
+#index-linguarum {
+	display: none;
+}
+
+#index-linguarum.activus {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100;
+	background-color: #2228;
+}
