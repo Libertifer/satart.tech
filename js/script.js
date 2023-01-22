@@ -32,7 +32,7 @@ function paginaScribere(obiectum) {
   }
 }
 
-textusLegere("./json/db.json");
+textusLegere("https://raw.githack.com/Libertifer/satart.tech/main/json/db.json");
 
 var titulus = document.title;
 function motioTituli() {
