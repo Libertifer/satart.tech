@@ -25,14 +25,18 @@ function linguaeIndicare(obiectum) {
   document.getElementById('index-linguarum').innerHTML += "</ul></div>";
 }
 
+function linguaeMonstrare() {
+  document.getElementById('index-linguarum').style.display = "auto";
+}
+
 function paginaScribere(obiectum) {
   document.getElementById('ludi').innerHTML = `<h1 class="text-2x1 font-bold">${obiectum['textus'][linguaElecta]['sectiones']['ludi']}</h1>`;
   for (let ludus in obiectum['ludi']) {
-    document.getElementById('principalis').innerHTML += `<fieldset id="ludus-${ludus}"><legend>${obiectum['ludi'][ludus]['nomen']}</legend><div class="descriptio"><img src="https://raw.githack.com/Libertifer/satart.tech/main/img/${obiectum['ludi'][ludus]['imago']}"/><div><p>${obiectum['ludi'][ludus]['descriptio'][linguaElecta]}</p><input type="button" value="Más información" onclick="window.open('${obiectum['ludi'][ludus]['vinculum']}')"></div></div></fieldset>`;
+    document.getElementById('principalis').innerHTML += `<fieldset id="ludus-${ludus}"><legend>${obiectum['ludi'][ludus]['nomen']}</legend><div class="descriptio"><img src="https://libertifer.github.io/satart.tech/img/${obiectum['ludi'][ludus]['imago']}"/><div><p>${obiectum['ludi'][ludus]['descriptio'][linguaElecta]}</p><input type="button" value="Más información" onclick="window.open('${obiectum['ludi'][ludus]['vinculum']}')"></div></div></fieldset>`;
   }
 }
 
-textusLegere("https://raw.githack.com/Libertifer/satart.tech/main/json/db.json");
+textusLegere("https://libertifer.github.io/satart.tech/json/db.json");
 
 var titulus = document.title;
 function motioTituli() {
