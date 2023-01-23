@@ -18,11 +18,10 @@ function indexScribere(obiectum) {
 
 function linguaeIndicare(obiectum) {
   console.log(obiectum);
-  document.getElementById('index-linguarum').innerHTML = "<div id='cuadrus'><ul>";
+  document.getElementById('index-linguarum').innerHTML = "<div><ul id='cuadrus'></ul></div>";
   for (let lingua in obiectum['textus']['linguae']) {
-    document.getElementById('index-linguarum').innerHTML += `<li onclick="linguaElecta = '${lingua}'">${obiectum['textus']['linguae'][lingua]}</li>`;
+    document.getElementById('cuadrus').innerHTML += `<li onclick="linguaElecta = '${lingua}'">${obiectum['textus']['linguae'][lingua]}</li>`;
   }
-  document.getElementById('index-linguarum').innerHTML += "</ul></div>";
 }
 
 function linguaeMonstrare() {
