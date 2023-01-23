@@ -26,7 +26,7 @@ function linguaeIndicare(obiectum) {
 }
 
 function linguaeMonstrare() {
-  document.getElementById('index-linguarum').classList.add = "activus";
+  document.getElementById('index-linguarum').classList.add("activus");
 }
 
 function paginaScribere(obiectum) {
